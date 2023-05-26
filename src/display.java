@@ -1,12 +1,12 @@
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionListener;
 
-public class display extends JFrame{
+public class display extends JFrame implements ActionListener{
     private JButton pomodoroButton;
     private JButton shortBreakButton;
     private JButton longBreakButton;
     private JButton button4;
-    private JPanel Top;
     private JPanel Time;
     private JPanel Start;
 
@@ -16,18 +16,27 @@ public class display extends JFrame{
     }
 
     private void setup(){
-        JFrame frame = new JFrame();
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(400,320);
-        frame.setLocation(600,300);
-        frame.setVisible(true);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setSize(400,320);
+        setLocation(600,300);
+        setVisible(true);
 
-        pomodoroButton = new JButton("ypp");
-        pomodoroButton.setVisible(true);
+        JPanel Top = new JPanel();
         Top.add(pomodoroButton);
         Top.add(shortBreakButton);
         Top.add(longBreakButton);
 
+        JPanel Time = new JPanel();
+        Time.add();
+
+
+        pomodoroButton.addActionListener(this);
+        shortBreakButton.addActionListener(this);
+        longBreakButton.addActionListener(this);
+
         add(Top, BorderLayout.NORTH);
+
+
+
     }
 }
