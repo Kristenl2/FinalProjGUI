@@ -1,5 +1,6 @@
 public class Main {
     public static void main(String[]args){
-        display gui = new display();
+        display x = new display();
+        new pomodoro();
     }
 }
