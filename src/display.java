@@ -1,12 +1,16 @@
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
 
 public class display extends JFrame implements ActionListener{
+    private JPanel top;
+    private JButton button4;
+    private JPanel time;
     private JButton pomodoroButton;
     private JButton shortBreakButton;
     private JButton longBreakButton;
-    private JButton button4;
+    private JPanel start;
     private JPanel Time;
     private JPanel Start;
 
@@ -27,16 +31,20 @@ public class display extends JFrame implements ActionListener{
         Top.add(longBreakButton);
 
         JPanel Time = new JPanel();
-        Time.add();
-
-
-        pomodoroButton.addActionListener(this);
-        shortBreakButton.addActionListener(this);
-        longBreakButton.addActionListener(this);
+        pomodoro x = new pomodoro();
 
         add(Top, BorderLayout.NORTH);
 
 
+    }
+
+    private void setupListeners() {
+        pomodoroButton.addActionListener(this);
+        shortBreakButton.addActionListener(this);
+        longBreakButton.addActionListener(this);
+    }
+
+    public void actionPerformed(ActionEvent ae) {
 
     }
 }

@@ -6,7 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="12771708-17c9-472d-97d7-032c53c111ba" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/display.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/display.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/display.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/display.java" afterDir="false" />
+    </list>
+    <list id="1a802fcf-5e7e-4204-968c-4828a55b824b" name="Changes by student" comment="">
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pomodoro.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/pomodoro.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
